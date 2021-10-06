@@ -1,0 +1,31 @@
+.benefits {
+  background-color: var(--color-for-colored-backgraund);
+
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 30px;
+    width: 270px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__title {
+    font-weight: $font-weight-700;
+    font-size: $font-size-14;
+    line-height: $line-height-114;
+    text-transform: uppercase;
+    color: var(--heading-text-color);
+    margin-bottom: 10px;
+  }
+  &__icon {
+    display: flex;
+    background-color: var(--secondary-background-color);
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+}

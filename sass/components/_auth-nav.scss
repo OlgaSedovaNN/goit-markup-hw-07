@@ -1,0 +1,33 @@
+.auth-nav {
+  display: flex;
+  align-items: center;
+
+  &--position {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    color: var(--accent-color);
+  }
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  &__link {
+    color: var(--primary-text-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    @include transition(color);
+  }
+  &__item {
+    margin-right: 50px;
+    align-items: center;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,35 @@
+.nav-list {
+  display: flex;
+
+  &__item {
+    margin-right: 50px;
+    position: relative;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+  &__link {
+    color: var(--heading-text-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    @include transition(color);
+  }
+  &__link--current::after {
+    content: '';
+    display: block;
+    background-color: var(--accent-color);
+    height: 4px;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+  }
+  &__link--current {
+    color: var(--accent-color);
+  }
+}
