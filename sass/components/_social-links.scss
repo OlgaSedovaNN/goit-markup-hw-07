@@ -16,8 +16,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--color-for-colored-backgraund);
-    @include transition(color);
-    @include transition(background-color);
+    transition: color $fortransitions, background-color $fortransitions;
   }
   &__link:hover,
   &__:focus {
