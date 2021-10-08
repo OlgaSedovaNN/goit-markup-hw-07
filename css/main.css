@@ -465,6 +465,11 @@ ul {
   fill: currentColor;
 }
 
+.social-links__link--footer {
+  color: var(--color-for-colored-backgraund);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .clients__title {
   margin-bottom: 50px;
 }
